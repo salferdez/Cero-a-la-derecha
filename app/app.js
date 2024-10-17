@@ -1,3 +1,4 @@
+//API REST obtenida a través de Oracle Cloud, referida a la tabla FUSION, formateando los datos que se nos propusieron al empezar el reto según nuestros objetivos de desarrollo
 const apiUrl = "https://g35d725d3b5f293-ceroaladerecha.adb.eu-madrid-1.oraclecloudapps.com/ords/usuario/fusion/";
 
 $(document).ready(function() {
