@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Embalses</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Consulta de Embalses</h1>
+    </header>
+
+    <div class="container mt-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Buscar Embalses Cercanos</h5>
+                <p class="card-text">Utiliza tu ubicación actual o introduce manualmente las coordenadas GPS:</p>
+                <button id="ubicacion-btn" class="btn btn-info">Usar mi ubicación</button>
+                <div class="form-group mt-3">
+                    <input type="text" id="latitud" placeholder="Latitud" class="form-control" required>
+                    <input type="text" id="longitud" placeholder="Longitud" class="form-control mt-2" required>
+                    <label for="radio" class="mt-2">Radio (km):</label>
+                    <input type="number" id="radio" value="100" class="form-control mt-2">
+                </div>
+                <button id="buscar-btn" class="btn btn-success mt-3">Buscar Embalses</button>
+            </div>
+        </div>
+
+        <div id="resultado" class="mt-4">
+            <h2>Resultados:</h2>
+            <ul id="embalses-list" class="list-group">
+                <!-- Resultados de la búsqueda se mostrarán aquí -->
+            </ul>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy;2024 - Consulta de Embalses</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
